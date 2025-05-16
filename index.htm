@@ -4,39 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-
-        <ul class="cabecalho">
-            <li>home</li>
-            <li>Habilidades</li>
-            <li>Projetos</li>
-            <li>experiências profissionais</li>
-            <li><a href="#"></a>Github</li>
-            <li><a href="#"></a>Linkedin</li>
-        </ul>
-        
-        <section>
-            <h1>>Portifólio Paulo Pinho</h1>
-            <img src="./19e40cad-dc5e-4496-8c8f-39ed0fd9f4d3.jpg" alt="Minha imagem de perfil">
-            <h2>Biografia</h2>
-            <p>Sou desenvolvedor Full Stack, Estou almejando criar experiência em front-end e back-end, utilizando linguagens de programação. Gosto de criar soluções completas, com código limpo, responsivo e funcional. Quero sempre está se desenvolvendo e querendo aprender.</p>
-        </section>
+        <nav>
+            <ul class="cabecalho">
+                <li>HOME</li>
+                <li>HABILIDADES</li>
+                <li>PROJETOS</li>
+                <li>EXPERIÊNCIAS PROFISSIONAIS</li>
+                <ul>
+            
+                    <div class="redes">
+            <ul>
+                
+                <li> <a target="_blank" href="https://github.com/PauloRobertoDevFull">
+                <img  src="./assets/github.png" alt="icone github"></a></li>
+            
+                <li><a target="_blank" href="https://www.linkedin.com/home">
+                <img src="./assets/linkedin.png" alt="icone linkedin"></a></li>
+            
+            </ul>
+        </div>
+        </nav>
     </header>
+    
     <main>
-        <div>
-        
-
-
+            
+        <div class="biografia">
+        <img src="./assets/19e40cad-dc5e-4496-8c8f-39ed0fd9f4d3.jpg" alt="Minha imagem de perfil">
+            <h1>Portfólio Paulo Roberto</h1>
+            <p>Sou desenvolvedor Full Stack, Estou almejando criar experiência em front-end e back-end, utilizando linguagens de programação. Gosto de criar soluções completas, com código limpo, responsivo e funcional. Quero sempre está se desenvolvendo e querendo aprender.</p>
         </div>
 
+        <hr class="linha">
+        
+        <section class="habilidades">
+        
+            <h2>HABILIDADES</h2>
+            
+            <ul class="lista-circulos">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Banco de Dados</li>
+        </ul>
+    </section>
+
+    <hr class="linha2">
+
+    <section class="projetos">
+    <h2>PROJETOS</h2>
+    
+    <div class="container-projetos">
+        
+        <div class="bloco-projeto">
+            <p>Aplicativo de tarefas com funções de marcar como concluída e remover.</p>
+        <img src="./assets/httpsth.bing.comthidOIP.bf_Um5shxy9Snj8HbRR0ZAHaHaw_193_h_193_c_7_r_0_o_5_pid_1.7-removebg-preview.png" alt="Aplicativo de tarefas">
+    
+        <p>Landing Page responsiva desenvolvida com HTML5 e CSS3</p>
+        <img src="./assets/segunda imagem.png" alt="Landing Page">
+    
+    </div>
+    </div>
+    </section>
+    
+    <hr class="linha">
+    
+    <section>
+    <form action="#"></form>
+    <h2 class="email">CONTATO</h2>
+    <div class="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </section>
 
     </main>
     <footer></footer>
 </body>
 </html>
-
